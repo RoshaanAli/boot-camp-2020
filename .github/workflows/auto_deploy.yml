@@ -18,7 +18,7 @@ jobs:
     - name: Install surge
       uses: npm install --global surge
     - name: Deploying using surge
-      run: surge ./ projectBootCamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./project1 projectBootCamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}
       
     - name: Build the site in the jekyll/builder container
       run: |
